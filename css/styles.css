@@ -30,7 +30,7 @@ body{
 
 .button-1{
 
-    background-color: rgb(226, 154, 166);
+    background-color: rgb(229, 115, 134);
     border: 3px solid rgb(34, 18, 47);
     padding: 2rem 3.5rem;
     transition: padding 250ms ease-out, background-color 500ms ease-in-out;
@@ -38,7 +38,7 @@ body{
 
 .button-1:hover{
 
-    background-color: rgb(186, 215, 190);
+    background-color: rgb(181, 255, 191);
     padding: 2.5rem 3.75rem;
     
 }
