@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-centered{
+
+    display: grid;
+    height: 100vh;
+    place-items: center;
+
+}
+
+/*button,
+ a{
+
+    background-color: none;
+    outline: 0;
+
+}
+*/
+
+.button-row{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button-1{
+
+    background-color: pink;
+    border: 6px solid antiquewhite;
+    padding: 2rem 3.5rem;
+    transition: padding 250ms ease-out, background-color 500ms ease-in-out;
+}
+
+.button-1:hover{
+
+    background-color: red;
+    padding: 2.5rem 3.75rem;
+    
+}
+
+.button-2{
+    
+    background-color: rgb(128, 128, 171);
+    border: 4px solid azure;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 150ms ease-in-out;
+
+}
+
+.button-2:hover{
+
+    background-color: blue;
+
+}
+
+.button-3{
+
+    background-color: none;
+    border: 2px solid black;
+    padding: 2rem 4rem;
+    border-radius: 50vw;
+    text-decoration: none;
+    transition: transform 300ms, background-color 100ms;
+}
+
+.button-3:hover,
+.button-3:focus{
+
+    background-color: turquoise;
+    transform: translateY(-1rem);
+
+}
