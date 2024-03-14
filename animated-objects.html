@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Objects</title>
+    <style>
+        .animated-icons-container{
+            background-color: rgb(148, 148, 201);
+            position: fixed;
+            inset: 0;
+            z-index: 1001;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+        }
+        .animated-icon-1{
+            --_icon-size: 4rem;
+            height: var(--_icon-size);
+            width: var(--_icon-size);
+            border: 0.2rem solid #2cdd81;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 100vh;
+            animation: spinner 1sec ease-in-out 2;
+        }
+        @keyframes spinner{
+            from {
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="animated-icons-container">
+        <div class="animated-icon-1"></div>
+        <div class="animated-icon-2"></div>
+        <div class="animated-icon-3"></div>
+    </section>
+</body>
+</html>
