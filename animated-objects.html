@@ -18,27 +18,75 @@
             --_icon-size: 4rem;
             height: var(--_icon-size);
             width: var(--_icon-size);
-            border: 0.2rem solid #2cdd81;
+            border: 0.2rem solid #1e0925;
             border-left-color: transparent;
             border-right-color: transparent;
             border-radius: 100vh;
-            animation: spinner 1sec ease-in-out 2;
+            animation: spinner 1s ease-in-out infinite alternate;
+        }
+        .animated-icon-2{
+            --_icon-size: 4rem;
+            height: var(--_icon-size);
+            width: var(--_icon-size);
+            border: 0.2rem solid #1e0925;
+            border-radius: 100vh;
+            animation: bounce 1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+        }
+
+        .three-dots{
+            display: flex;
+            gap: 0.3rem;
+
+        }
+        .animated-icon-3{
+            --_icon-size: .6rem;
+            height: var(--_icon-size);
+            width: var(--_icon-size);
+            background-color: #1e0925;
+            border-radius: 100vh;
+        }
+        .bounce-1{
+            animation: bounce 1000ms cubic-bezier(0.015, 0.32, 0.24, 1) infinite;
+        }
+        .bounce-2{
+            animation: bounce 1000ms 100ms cubic-bezier(0.015, 0.32, 0.24, 1) infinite;
+        }
+        .bounce-3{
+            animation: bounce 1000ms 200ms cubic-bezier(0.015, 0.32, 0.24, 1) infinite;
         }
         @keyframes spinner{
-            from {
-                transform: rotate(0deg);
+            0%{
+                transform: rotate(0deg) scale(1);
             }
-            to{
-                transform: rotate(1turn);
+            100%{
+                transform: rotate(1turn) scale(1.5);
             }
         }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(-4rem)
+            }
+            50%%{
+                transform: translateY(0rem)
+            }
+        }
+        @keyframes 
+
     </style>
 </head>
 <body>
     <section class="animated-icons-container">
         <div class="animated-icon-1"></div>
         <div class="animated-icon-2"></div>
-        <div class="animated-icon-3"></div>
+        <div class="three-dots">
+            <div class="animated-icon-3 bounce-1"></div>
+            <div class="animated-icon-3 bounce-2"></div>
+            <div class="animated-icon-3 bounce-3"></div>
+        </div>
+        
     </section>
 </body>
 </html>
